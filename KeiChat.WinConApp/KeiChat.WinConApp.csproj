@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyTitle>KeiChatDemo</AssemblyTitle>
+		<ApplicationIcon>icon_128.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="KeiChat.WinCon" Version="6.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="icon_128.ico" />
+	</ItemGroup>
+
+</Project>

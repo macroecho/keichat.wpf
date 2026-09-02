@@ -1,0 +1,970 @@
+﻿<!-- 
+ * =================================================================
+ * Copyright (c) 2023 KeiSoft, All Rights Reserved.
+ * Author: macro
+ * Date: 2023-09-05
+ * Version: 6.0.0
+ * Description: 简体中文语言包
+ * 
+ * 开源代码使用条款
+ *     感谢您使用 Keisoft.Chat（以下简称“本代码”）。为确保合法、合规地使用本代码，请您仔细阅读以下条款。
+ *     使用本代码即表示您同意遵守以下所有条款及适用法律法规。
+ *     
+ * 一、许可证信息
+ *     本代码受 MIT 许可证和 Apache 许可证（版本 2.0）进行分发和使用。 
+ *     
+ * 二、合法使用限制（附加条件）
+ *     您确认并同意：
+ *     1. 仅将本代码用于合法目的；
+ *     2. 遵守所有适用的法律法规，包括但不限于您所在司法管辖区、
+ *        行为发生地及目标影响地的相关法律；
+ *     3. 不得利用本代码从事以下行为：
+ *        - 未授权访问计算机系统或网络
+ *        - 侵犯他人知识产权、隐私权等合法权益
+ *        - 危害网络安全或违反网络安全相关法律
+ *        - 其他任何违反法律法规的行为
+ *
+ * 三、违反后果
+ *     若您违反上述第二条中的任何限制，本代码授予您的使用授权立即终止。
+ *     您必须立即停止使用本代码，并删除您持有的所有副本。
+ *     因您违反本声明导致的任何法律责任由您自行承担，
+ *     本项目维护者保留追究法律责任的权利。
+ *
+ * 四、免责声明  
+ *     1. 本代码按“原样”提供，我们不对本代码的准确性、完整性、适用性、安全性作任何明示或暗示的担保，包括但不限于适销性、特定用途适用性的担保。
+ *     2. 因使用本代码或衍生作品而产生的任何直接、间接、偶然、特殊或后果性损害（包括但不限于数据丢失、业务中断、利润损失等），我们不承担任何责任。
+ * 
+ * =================================================================    
+-->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+
+    <!-- 自定义 UI 控件需要用到的字符串 -->
+    <sys:String x:Key="KeiChat.WinUI.CloseString">关闭</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.SeeMoreString">查看更多</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.PopDialogTitleString">提示</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.PopDialogCancelString">取消</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.PopDialogConfirmString">确定</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.SearchPlaceholderString">搜索</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.CountTextTemplateString">你还可以输入 {0} 个字符</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.RegionComboBoxProvinceString">省份</sys:String>
+    <sys:String x:Key="KeiChat.WinUI.RegionComboBoxCityString">城市</sys:String>
+
+    <!-- 公共字符 -->
+    <sys:String x:Key="AppName">KeiChatDemo</sys:String>
+    <sys:String x:Key="AppIcon">icon_128.ico</sys:String>
+    <sys:String x:Key="ArgError">参数异常</sys:String>
+    <sys:String x:Key="AddString">添加</sys:String>
+    <sys:String x:Key="EditString">编辑</sys:String>
+    <sys:String x:Key="CopyString">复制</sys:String>
+    <sys:String x:Key="UseString">应用</sys:String>
+    <sys:String x:Key="SaveString">保存</sys:String>
+    <sys:String x:Key="SendString">发送</sys:String>
+    <sys:String x:Key="RetryString">重试</sys:String>
+    <sys:String x:Key="CloseString">关闭</sys:String>
+    <sys:String x:Key="DeleteString">删除</sys:String>
+    <sys:String x:Key="GoBackString">返回</sys:String>
+    <sys:String x:Key="CancelString">取消</sys:String>
+    <sys:String x:Key="ConfirmString">确定</sys:String>
+    <sys:String x:Key="CompleteString">完成</sys:String>
+    <sys:String x:Key="SearchString">搜索</sys:String>
+    <sys:String x:Key="AgreeString">同意</sys:String>
+    <sys:String x:Key="RefuseString">拒绝</sys:String>
+    <sys:String x:Key="IgnoreString">忽略</sys:String>
+    <sys:String x:Key="FillString">填写</sys:String>
+    <sys:String x:Key="MoreString">更多</sys:String>
+    <sys:String x:Key="PublishString">发布</sys:String>
+    <sys:String x:Key="OrganizeString">整理</sys:String>
+    <sys:String x:Key="SeeString">查看</sys:String>
+    <sys:String x:Key="SeeMoreString">查看更多</sys:String>
+    <sys:String x:Key="ClickSeeDetailString">点击查看详情</sys:String>
+    <sys:String x:Key="FoldUpString">收起</sys:String>
+    <sys:String x:Key="ReplaceString">更换</sys:String>
+    <sys:String x:Key="SearchKeyNullString">搜索内容不能为空</sys:String>
+    <sys:String x:Key="EditQuitHintString">放弃本次编辑的内容吗？</sys:String>
+
+    <sys:String x:Key="OpenString">打开</sys:String>
+    <sys:String x:Key="ExistString">退出</sys:String>
+
+    <sys:String x:Key="BoyString">男</sys:String>
+    <sys:String x:Key="GirlString">女</sys:String>
+    <sys:String x:Key="SexSecrecyString">保密</sys:String>
+    <sys:String x:Key="AppellationMeString">我</sys:String>
+    <sys:String x:Key="AppellationYouString">你</sys:String>
+    <sys:String x:Key="AppellationOtherString">对方</sys:String>
+    <sys:String x:Key="ThirdPersonHeString">他</sys:String>
+    <sys:String x:Key="ThirdPersonSheString">她</sys:String>
+    <sys:String x:Key="ThirdPersonUnknownString">他（她）</sys:String>
+    <sys:String x:Key="UnAuthorizedString">你的登录信息已失效，请重新登录</sys:String>
+    <sys:String x:Key="UserAlreadyLoginString">该账号已在当前设备上登录了</sys:String>
+
+    <!-- 时间 -->
+    <sys:String x:Key="YearString">年</sys:String>
+    <sys:String x:Key="MonthString">月</sys:String>
+    <sys:String x:Key="TodayString">今天</sys:String>
+    <sys:String x:Key="YesterdayString">昨天</sys:String>
+
+    <!-- 符号 -->
+    <sys:String x:Key="CommaString">，</sys:String>
+    <sys:String x:Key="CaesuraString">、</sys:String>
+    <sys:String x:Key="OmitString">...</sys:String>
+
+    <sys:String x:Key="InUseString">使用中</sys:String>
+    <sys:String x:Key="LoadingTextString">加载中</sys:String>
+    <sys:String x:Key="ConnectingTextString">连接中</sys:String>
+    <sys:String x:Key="ProcessingString">正在处理中</sys:String>
+    <sys:String x:Key="ProcessingFailedString">处理失败</sys:String>
+    <sys:String x:Key="ProcessingSuccessString">处理成功</sys:String>
+    <sys:String x:Key="GetErrorDataString">获取数据失败</sys:String>
+    <sys:String x:Key="DeleteSuccessString">删除成功</sys:String>
+    <sys:String x:Key="RemoveSuccessString">移除成功</sys:String>
+    <sys:String x:Key="ClearSuccessString">清空成功</sys:String>
+    <sys:String x:Key="AddFailString">添加失败</sys:String>
+    <sys:String x:Key="AddSuccessString">添加成功</sys:String>
+    <sys:String x:Key="SetSuccessString">设置成功</sys:String>
+    <sys:String x:Key="ModifiedSuccessString">修改成功</sys:String>
+    <sys:String x:Key="UseSuccessString">应用成功</sys:String>
+    <sys:String x:Key="SaveSuccessString">保存成功</sys:String>
+    <sys:String x:Key="SaveFailedString">保存失败</sys:String>
+    <sys:String x:Key="CreateSuccessString">创建成功</sys:String>
+    <sys:String x:Key="PublishSuccessString">发布成功</sys:String>
+    <sys:String x:Key="SendSuccessString">发送成功</sys:String>
+    <sys:String x:Key="RefreshSuccessString">刷新成功</sys:String>
+    <sys:String x:Key="QuitSuccessString">退出成功</sys:String>
+    <sys:String x:Key="BindSuccessString">绑定成功</sys:String>
+    <sys:String x:Key="ReplaceSuccessString">更换成功</sys:String>
+    <sys:String x:Key="DismissalSuccessString">解散成功</sys:String>
+    <sys:String x:Key="CollectSuccessString">收藏成功</sys:String>
+    <sys:String x:Key="CollectErrorString">收藏失败</sys:String>
+    <sys:String x:Key="StickerAddErrorString">表情添加失败</sys:String>
+    <sys:String x:Key="StickerAddSuccessString">表情添加成功</sys:String>
+    <sys:String x:Key="BrowserOpenString">浏览器中打开</sys:String>
+    <sys:String x:Key="UploadingString">上传中</sys:String>
+    <sys:String x:Key="UploadingImageString">正在上传图片</sys:String>
+    <sys:String x:Key="UploadingVideoString">正在上传视频</sys:String>
+    <sys:String x:Key="UploadImageFailString">图片上传失败</sys:String>
+    <sys:String x:Key="UploadVideoFailString">视频上传失败</sys:String>
+    <sys:String x:Key="UploadFileSizeLimitString">不能上传大小超过 {0} 的文件</sys:String>
+    <sys:String x:Key="BindString">绑定</sys:String>
+    <sys:String x:Key="UnboundString">未绑定</sys:String>
+
+    <sys:String x:Key="DataNull">暂无数据</sys:String>
+    <sys:String x:Key="DataNotExist">数据不存在</sys:String>
+    <sys:String x:Key="DataReadFail">数据读取失败</sys:String>
+    <sys:String x:Key="DataReadFailServerFail">从服务器上获取数据失败</sys:String>
+
+    <sys:String x:Key="EmailErrorString">邮箱地址格式不正确</sys:String>
+    <sys:String x:Key="PhoneNumberErrorString">手机号码格式不正确</sys:String>
+
+
+    <sys:String x:Key="NetErrorString">请求发生异常</sys:String>
+    <sys:String x:Key="NetAbortedString">请求被终止</sys:String>
+    <sys:String x:Key="NetTimedOutString">请求超时</sys:String>
+    <sys:String x:Key="NetSSLErrorString">SSL 证书异常</sys:String>
+    <sys:String x:Key="NetSocketErrorString">网络不可用</sys:String>
+    <sys:String x:Key="DisconnectString">已断开连接</sys:String>
+    <sys:String x:Key="UnableConnectServerString">无法连接服务器，请检查网络</sys:String>
+
+    <sys:String x:Key="BadGatewayString">网关不可用</sys:String>
+    <sys:String x:Key="GatewayTimeoutString">网关超时</sys:String>
+    <sys:String x:Key="ServiceUnavailableString">服务器内部错误</sys:String>
+
+    <!-- 同意协议 -->
+    <sys:String x:Key="AgreeAgreementString">已阅读并且同意</sys:String>
+    <sys:String x:Key="UserAgreementString">《用户协议》</sys:String>
+    <sys:String x:Key="PrivacyPolicyString">《隐私政策》</sys:String>
+    <sys:String x:Key="NotAgreeAgreementString">请阅读并且同意《用户协议》和《隐私政策》</sys:String>
+
+    <!-- 图片错误提示 -->
+    <sys:String x:Key="ImageFormatNotSupportedString">不支持该类型的图片</sys:String>
+    <sys:String x:Key="ImageFormatErrorString">图片文件可能已损坏或格式不正确</sys:String>
+    <sys:String x:Key="ImageFormatMultipleErrorString">已自动过滤无法加载的图片文件 `(*^﹏^*)′</sys:String>
+
+    <sys:String x:Key="VideoFormatErrorString">视频格式不支持或文件已损坏</sys:String>
+
+    <!-- 编辑头像的页面 -->
+    <sys:String x:Key="EditProfilePhotoToolTipString">编辑头像</sys:String>
+
+    <!-- 登录、注册、找回密码、短信验证码、图形验证码 页面 -->
+    <sys:String x:Key="SignInTitleString">登录</sys:String>
+    <sys:String x:Key="SignInButtonString">登录</sys:String>
+    <sys:String x:Key="SignInEmailString">输入邮箱地址</sys:String>
+    <sys:String x:Key="SignInPhoneString">输入手机号码</sys:String>
+    <sys:String x:Key="SignInPasswordString">输入密码</sys:String>
+    <sys:String x:Key="SignInGoToSignUpString">注册账号</sys:String>
+    <sys:String x:Key="SignInGoEmailSignInString">邮箱登录</sys:String>
+    <sys:String x:Key="SignInGoPhoneSignInString">手机号登录</sys:String>
+    <sys:String x:Key="SignInForgetPasswordString">忘记密码</sys:String>
+    <sys:String x:Key="SignInProgressString">正在登录中</sys:String>
+    <sys:String x:Key="SignInEmailNullString">请输入用于登录的邮箱地址</sys:String>
+    <sys:String x:Key="SignInPhoneNullString">请输入用于登录的手机号码</sys:String>
+    <sys:String x:Key="SignInPasswordNullString">请输入用于登录的账号密码</sys:String>
+    <sys:String x:Key="SignInFailString">登录失败，请稍后重试</sys:String>
+    <sys:String x:Key="SignInStorageUserString">保存账号，下次免密登录</sys:String>
+
+    <sys:String x:Key="LoggingInButtonString">登录中</sys:String>
+
+    <sys:String x:Key="AutoLoginTitleString">登录</sys:String>
+    <sys:String x:Key="AutoLoginButtonString">免密登录</sys:String>
+    <sys:String x:Key="AutoLoginAddUserString">添加账号</sys:String>
+    <sys:String x:Key="AutoLoginRemoveUserString">移除账号</sys:String>
+    <sys:String x:Key="AutoLoginSwitchUserString">切换账号</sys:String>
+
+    <sys:String x:Key="SignUpTitleString">注册账号</sys:String>
+    <sys:String x:Key="SignUpButtonString">注册</sys:String>
+    <sys:String x:Key="SignUpNicknameString">输入昵称，例如：小明</sys:String>
+    <sys:String x:Key="SignUpEmailString">输入邮箱地址</sys:String>
+    <sys:String x:Key="SignUpPhoneString">输入手机号码</sys:String>
+    <sys:String x:Key="SignUpPasswordString">密码长度为 6-20 个字符</sys:String>
+    <sys:String x:Key="SignUpNicknameNullString">请输入昵称，可填写 1-20 个字符</sys:String>
+    <sys:String x:Key="SignUpEmailNullString">请输入邮箱地址</sys:String>
+    <sys:String x:Key="SignUpPhoneNullString">请输入手机号码</sys:String>
+    <sys:String x:Key="SignUpPasswordNullString">请输入账号密码，可填写 6-20 个字符</sys:String>
+    <sys:String x:Key="SignUpProgressString">正在注册中</sys:String>
+    <sys:String x:Key="SignUpFailString">注册失败，请稍后重试</sys:String>
+    <sys:String x:Key="SignUpSuccessString">注册成功，马上去登录</sys:String>
+    <sys:String x:Key="SignUpPasswordOverflowString">密码长度为 6-20 个字符</sys:String>
+    <sys:String x:Key="SignUpEmailExistString">该邮箱地址已被注册</sys:String>
+    <sys:String x:Key="SignUpPhoneExistString">该手机号码已被注册</sys:String>
+
+    <sys:String x:Key="ForgetPasswordTitleString">忘记密码</sys:String>
+    <sys:String x:Key="ForgetPasswordString">新密码长度为 6-20 个字符</sys:String>
+    <sys:String x:Key="ForgetPasswordButtonString">下一步</sys:String>
+    <sys:String x:Key="ForgetPasswordEmailNullString">请输入与账号绑定的邮箱地址</sys:String>
+    <sys:String x:Key="ForgetPasswordPhoneNullString">请输入与账号绑定的手机号码</sys:String>
+    <sys:String x:Key="ForgetPasswordNotExistString">输入的账号不存在</sys:String>
+    <sys:String x:Key="ForgetPasswordPasswordNullString">请输入新的登录密码，可填写 6-20 个字符</sys:String>
+    <sys:String x:Key="ForgetPasswordPasswordOverflowString">新密码长度为 6-20 个字符</sys:String>
+    <sys:String x:Key="ForgetPasswordProgressString">正在重置密码</sys:String>
+    <sys:String x:Key="ForgetPasswordFailString">重置密码失败，请稍后重试</sys:String>
+    <sys:String x:Key="ForgetPasswordResetSuccessString">密码重置成功</sys:String>
+
+    <sys:String x:Key="SmsCaptchaTitleString">短信验证</sys:String>
+    <sys:String x:Key="SmsCaptchaRecurrenceString">重新发送</sys:String>
+    <sys:String x:Key="SmsCaptchaRecurrenceCuntdownString">重新发送（等待{0}秒）</sys:String>
+    <sys:String x:Key="SmsCaptchaSendTipsString">短信验证码发送至</sys:String>
+    <sys:String x:Key="SmsCaptchaProgressString">正在发送中</sys:String>
+    <sys:String x:Key="SmsCaptchaCompletedString">已发送</sys:String>
+    <sys:String x:Key="SmsCaptchaFailString">验证失败，请稍后重试</sys:String>
+    <sys:String x:Key="SmsCaptchaErrorString">验证码错误</sys:String>
+    <sys:String x:Key="SmsCaptchaExpireString">验证码已失效</sys:String>
+    <sys:String x:Key="SmsCaptchaAuthCodeExpireString">需重新验证</sys:String>
+
+    <sys:String x:Key="EmailCaptchaTitleString">邮箱验证</sys:String>
+    <sys:String x:Key="EmailCaptchaRecurrenceString">重新发送</sys:String>
+    <sys:String x:Key="EmailCaptchaRecurrenceCuntdownString">重新发送（等待{0}秒）</sys:String>
+    <sys:String x:Key="EmailCaptchaSendTipsString">邮箱验证码发送至</sys:String>
+    <sys:String x:Key="EmailCaptchaProgressString">正在发送中</sys:String>
+    <sys:String x:Key="EmailCaptchaCompletedString">已发送</sys:String>
+    <sys:String x:Key="EmailCaptchaFailString">验证失败，请稍后重试</sys:String>
+    <sys:String x:Key="EmailCaptchaErrorString">验证码错误</sys:String>
+    <sys:String x:Key="EmailCaptchaExpireString">验证码已失效</sys:String>
+    <sys:String x:Key="EmailCaptchaAuthCodeExpireString">需重新验证</sys:String>
+
+    <sys:String x:Key="ImgCaptchaTitleString">安全验证</sys:String>
+    <sys:String x:Key="ImgCaptchaRefreshString">换一张图形验证码</sys:String>
+    <sys:String x:Key="ImgCaptchaPlaceholderString">输入上图中的 4 个字母</sys:String>
+    <sys:String x:Key="ImgCaptchaCodeNullString">输入验证码</sys:String>
+    <sys:String x:Key="ImgCaptchaCodeErrorString">验证码错误</sys:String>
+    <sys:String x:Key="ImgCaptchaCodeExpireString">验证码已失效</sys:String>
+
+    <sys:String x:Key="UserInitString">正在加载用户数据，请稍候</sys:String>
+
+    <!-- 首页面 -->
+    <sys:String x:Key="HomeLoadingString">正在加载数据，请稍候</sys:String>
+    <sys:String x:Key="HomeNavMessageTipString">消息</sys:String>
+    <sys:String x:Key="HomeNavContactTipString">联系人</sys:String>
+    <sys:String x:Key="HomeNavFavoriteTipString">收藏</sys:String>
+    <sys:String x:Key="HomeNavFileTipString">聊天文件</sys:String>
+    <sys:String x:Key="HomeNavStickerTipString">我的表情</sys:String>
+    <sys:String x:Key="HomeNavMomentTipString">好友圈</sys:String>
+    <sys:String x:Key="HomeNavLockTipString">锁定</sys:String>
+    <sys:String x:Key="HomeNavSettingTipString">设置</sys:String>
+
+    <sys:String x:Key="HoemMenuCreateGroupString">创建群聊</sys:String>
+    <sys:String x:Key="HoemMenuAddFriendString">添加好友</sys:String>
+    <sys:String x:Key="HoemMenuAddGroupString">加入群聊</sys:String>
+
+    <sys:String x:Key="HoemSearchNotDataString">未找到符合条件的内容</sys:String>
+    <sys:String x:Key="HoemSearchTitleFriendString">好友</sys:String>
+    <sys:String x:Key="HoemSearchTitleGroupString">群聊</sys:String>
+
+    <sys:String x:Key="HomeSearchFriendTitleString">搜索好友</sys:String>
+    <sys:String x:Key="HomeSearchFriendPlaceholderString">输入好友的通讯号、昵称、备注名称等关键字搜索</sys:String>
+
+    <sys:String x:Key="HomeSearchTeamTitleString">搜索群聊</sys:String>
+    <sys:String x:Key="HomeSearchTeamPlaceholderString">输入群号、名称、备注名称等关键字搜索</sys:String>
+
+    <!-- 会话列表 -->
+    <sys:String x:Key="HoemNotConversationString">暂无消息</sys:String>
+    <sys:String x:Key="HomeGetConversationErrorString">获取消息数据失败</sys:String>
+    <sys:String x:Key="HomeConversationSysNotifyNameString">系统通知</sys:String>
+    <sys:String x:Key="HomeConversationSysNoticeSecurityString">[安全通知]</sys:String>
+    <sys:String x:Key="HomeConversationSysNoticeForceOfflineString">[强制下线通知]</sys:String>
+    <sys:String x:Key="HomeConversationRevokeString">{0}撤回了一条消息</sys:String>
+    <sys:String x:Key="HomeConversationRefuseString">消息发送成功，但目标对象拒绝接收</sys:String>
+    <sys:String x:Key="HomeConversationInterceptionString">消息内容包含敏感词汇，已被系统拦截</sys:String>
+    <sys:String x:Key="HomeConversationGroupOpenNoSpeakString">对你开启了禁言</sys:String>
+    <sys:String x:Key="HomeConversationGroupCloseNoSpeakString">对你关闭了禁言</sys:String>
+    <sys:String x:Key="HomeConversationGroupOpenAllNoSpeakString">开启了全员禁言</sys:String>
+    <sys:String x:Key="HomeConversationGroupCloseAllNoSpeakString">关闭了全员禁言</sys:String>
+    <sys:String x:Key="HomeConversationGroupDismissalString">该群已被群主解散</sys:String>
+    <sys:String x:Key="HomeConversationGroupBecomeAdminString">你已成为群管理员</sys:String>
+    <sys:String x:Key="HomeConversationGroupLossAdminString">你已失去群管理员权限</sys:String>
+    <sys:String x:Key="HomeConversationGroupNewMasterString">{0}成为新群主</sys:String>
+    <sys:String x:Key="HomeConversationGroupRemoveMeString">你被{0}移除了群聊</sys:String>
+    <sys:String x:Key="HomeConversationGroupNaemChangeString">修改了群名称为“{0}”</sys:String>
+
+    <!-- 会话列表，右键菜单 -->
+    <sys:String x:Key="HomeConversationMenuTopOnString">置顶</sys:String>
+    <sys:String x:Key="HomeConversationMenuTopOffString">取消置顶</sys:String>
+    <sys:String x:Key="HomeConversationMenuReadString">标为已读</sys:String>
+    <sys:String x:Key="HomeConversationMenuUnreadString">标为未读</sys:String>
+    <sys:String x:Key="HomeConversationMenuMuteOnString">设为免打扰</sys:String>
+    <sys:String x:Key="HomeConversationMenuMuteOffString">取消免打扰</sys:String>
+    <sys:String x:Key="HomeConversationMenuDetachedWindowString">独立窗口显示</sys:String>
+    <sys:String x:Key="HomeConversationMenuDeleteString">从列表中移除</sys:String>
+    <sys:String x:Key="HomeConversationMenuTopOnErrorString">置顶失败，请稍后重试</sys:String>
+    <sys:String x:Key="HomeConversationMenuTopOffErrorString">取消置顶失败，请稍后重试</sys:String>
+    <sys:String x:Key="HomeConversationMenuMuteOnErrorString">设为免打扰失败，请稍后重试</sys:String>
+    <sys:String x:Key="HomeConversationMenuMuteOffErrorString">取消免打扰失败，请稍后重试</sys:String>
+
+    <!-- 发送消息的页面 -->
+    <sys:String x:Key="MessageExpressionTipString">表情</sys:String>
+    <sys:String x:Key="MessageImageTipString">图片</sys:String>
+    <sys:String x:Key="MessageFileTipString">文件</sys:String>
+    <sys:String x:Key="MessageFavoriteTipString">收藏</sys:String>
+    <sys:String x:Key="MessageRedpacketTipString">红包</sys:String>
+    <sys:String x:Key="MessageVoiceTipString">语音消息</sys:String>
+    <sys:String x:Key="MessageScreenshotTipString">截图</sys:String>
+    <sys:String x:Key="MessageScreenshotSCWString">截图时显示当前窗口</sys:String>
+    <sys:String x:Key="MessageVoiceCallTipString">语音通话</sys:String>
+    <sys:String x:Key="MessageVideoCallTipString">视频通话</sys:String>
+    <sys:String x:Key="MessageContactCardTipString">个人名片</sys:String>
+    <sys:String x:Key="MessageGroupCardTipString">群聊名片</sys:String>
+    <sys:String x:Key="MessageRtbEmptyString">消息内容为空</sys:String>
+    <sys:String x:Key="MessageRtbPlaceholderString">输入消息</sys:String>
+    <sys:String x:Key="MessageRtbPlaceholderhLinebreakString">Shift+Enter 键换行</sys:String>
+    <sys:String x:Key="MessageOriginalImageString">原图</sys:String>
+    <sys:String x:Key="MessageSendButtonString">发送</sys:String>
+    <sys:String x:Key="MessageSendImageLimitString">同时最多发送 9 张图片，已过滤 {0} 张图片 `(*^﹏^*)′</sys:String>
+    <sys:String x:Key="MessageSendToObjectString">发送给 {0}</sys:String>
+    <sys:String x:Key="MessageSendFileSizeZeroString">不能发送大小为 0 的文件</sys:String>
+    <sys:String x:Key="MessageSendFileSizeLimitString">不能发送大小超过 {0} 的文件</sys:String>
+    <sys:String x:Key="MessageResendString">重新发送</sys:String>
+    <sys:String x:Key="MessageResendConfirmString">重新发送该条消息？</sys:String>
+    <sys:String x:Key="MessageResendFileErrorString">文件已损坏</sys:String>
+    <sys:String x:Key="MessageResendFileNotExistString">文件不存在</sys:String>
+    <sys:String x:Key="MessageSendErrorString">发送失败</sys:String>
+    <sys:String x:Key="MessageSendAttEmptyString">附件内容为空</sys:String>
+    <sys:String x:Key="MessagePressEnterSendString">按 Enter 键发送消息</sys:String>
+    <sys:String x:Key="MessagePressCtrlEnterSendString">按 Ctrl+Enter 键发送消息</sys:String>
+    <sys:String x:Key="MessageTextContentLimitString">输入的文字已超过最大限制，无法发送</sys:String>
+    <sys:String x:Key="MessageUnreadTispString">新消息 ({0})</sys:String>
+    <sys:String x:Key="MessageFileDownloadingString">文件正在下载中，稍后再试</sys:String>
+    <sys:String x:Key="MessageImageDownloadingString">图片正在下载中，稍后再试</sys:String>
+    <sys:String x:Key="MessageVideoDownloadingString">视频正在下载中，稍后再试</sys:String>
+    <sys:String x:Key="MessageDownloadFileNotFoundString">文件已过期或已被清理</sys:String>
+
+    <!-- 该消息类型暂无法显示 -->
+    <sys:String x:Key="MessageUnknownSubTypeString">[该消息类型暂无法显示，请使用最新版本查看]</sys:String>
+    <!-- 消息内容解析失败 -->
+    <sys:String x:Key="MessageContentParseErrorString">[内容解析失败]</sys:String>
+
+    <sys:String x:Key="MessageRevokeFailString">撤回失败</sys:String>
+    <sys:String x:Key="MessageRevokeLoadingString">正在撤回</sys:String>
+    <sys:String x:Key="MessageRevokeRepeatString">消息已撤回</sys:String>
+    <sys:String x:Key="MessageRevokeTimeoutString">消息已超过 {0} 分钟无法撤回</sys:String>
+    <sys:String x:Key="MessageRevokeNetworErrorString">撤回不成功，请检查网络是否正常</sys:String>
+    <sys:String x:Key="MessageRevokeReEditString">重新编辑</sys:String>
+    <sys:String x:Key="MessageRevokeReEditConfirmString">确定清空输入框中的内容，再重新编辑？</sys:String>
+    <sys:String x:Key="MessageClearConfirmString">确定删除该条消息？</sys:String>
+
+    <sys:String x:Key="MessageTispRevokeString">{0}撤回了一条消息</sys:String>
+    <sys:String x:Key="MessageTispRefuseString">消息发送成功，但目标对象拒绝接收</sys:String>
+    <sys:String x:Key="MessageTispInterceptionString">消息内容包含敏感词汇，已被系统拦截</sys:String>
+    <sys:String x:Key="MessageTispGroupOpenNoSpeakString">{0}对你开启了禁言</sys:String>
+    <sys:String x:Key="MessageTispGroupCloseNoSpeakString">{0}对你关闭了禁言</sys:String>
+    <sys:String x:Key="MessageTispGroupOpenAllNoSpeakString">{0}开启了全员禁言</sys:String>
+    <sys:String x:Key="MessageTispGroupCloseAllNoSpeakString">{0}关闭了全员禁言</sys:String>
+    <sys:String x:Key="MessageTispGroupDismissalString">该群已被群主解散</sys:String>
+    <sys:String x:Key="MessageTispGroupBecomeAdminString">你已成为群管理员</sys:String>
+    <sys:String x:Key="MessageTispGroupLossAdminString">你已失去群管理员权限</sys:String>
+    <sys:String x:Key="MessageTispGroupNewMasterString">{0}成为新群主</sys:String>
+    <sys:String x:Key="MessageTispGroupRemoveMeString">你被{0}移除了群聊</sys:String>
+    <sys:String x:Key="MessageTispGroupNameChangeString">{0}修改了群名称为“{1}”</sys:String>
+    <sys:String x:Key="MessageTispGroupNoticeString">群公告</sys:String>
+    <sys:String x:Key="MessageTispGroupBanString">该群已被封禁</sys:String>
+    <sys:String x:Key="MessageTispGroupUnBanString">该群已解除封禁</sys:String>
+
+    <!-- 系统通知 标题 -->
+    <sys:String x:Key="MessageSysNoticeNullString">暂无通知</sys:String>
+    <sys:String x:Key="MessageSysNoticeNormaString">服务通知</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupString">群聊通知</sys:String>
+    <sys:String x:Key="MessageSysNoticeFriendString">好友通知</sys:String>
+    <sys:String x:Key="MessageSysNoticeSecurityString">安全通知</sys:String>
+    <sys:String x:Key="MessageSysNoticeForceOfflineString">强制下线通知</sys:String>
+    <sys:String x:Key="MessageSysNoticeForceOfflineTispString">你的帐号于 {0} 在设备 {1} 上登录，设备号：{2}。如果这不是你本人操作，你的登录密码已泄露，请尽快修改。</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupWaaString">有新成员申请加入群聊，需要你同意后新成员才可以入群</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupWmvString">{0}邀请你加入群聊，需要你同意后才可以入群</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupSaString">群主设置你为群管理员身份</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupRaString">群主取消了你群管理员身份</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupTString">你已成为新群主</sys:String>
+    <sys:String x:Key="MessageSysNoticeFriendAString">{0}请求添加你为好友</sys:String>
+    <sys:String x:Key="MessageSysNoticeFriendUIdString">通讯号</sys:String>
+    <sys:String x:Key="MessageSysNoticeFriendNicknameString">昵称</sys:String>
+    <sys:String x:Key="MessageSysNoticeFriendReasonString">附加信息</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupIdString">群号</sys:String>
+    <sys:String x:Key="MessageSysNoticeGroupNameString">群名称</sys:String>
+
+    <sys:String x:Key="MessageQuoteClearString">取消引用</sys:String>
+    <sys:String x:Key="MessageQuoteNoExistString">引用的内容不存在</sys:String>
+    <sys:String x:Key="MessageQuoteRevokeString">引用的内容已被撤回</sys:String>
+
+    <sys:String x:Key="MessageMergeTitleP2pString">群聊的聊天记录</sys:String>
+    <sys:String x:Key="MessageMergeTitleC2pString">{0}和{1}的聊天记录</sys:String>
+    <sys:String x:Key="MessageMergeTitleSingleString">{0}的聊天记录</sys:String>
+    <sys:String x:Key="MessageMergeTitleNumberString">{0}条聊天记录</sys:String>
+
+    <!-- 消息的右键菜单 -->
+    <sys:String x:Key="MessageMenuCopyString">复制</sys:String>
+    <sys:String x:Key="MessageMenuQuoteString">引用</sys:String>
+    <sys:String x:Key="MessageMenuForwardString">转发</sys:String>
+    <sys:String x:Key="MessageMenuCollectString">收藏</sys:String>
+    <sys:String x:Key="MessageMenuMultipleChoiceString">多选</sys:String>
+    <sys:String x:Key="MessageMenuRevokeString">撤回</sys:String>
+    <sys:String x:Key="MessageMenuClearString">删除</sys:String>
+    <sys:String x:Key="MessageMenuStickerString">添加</sys:String>
+    <sys:String x:Key="MessageMenuSaveAsString">另存为</sys:String>
+    <sys:String x:Key="MessageMenuLocationString">定位到原文位置</sys:String>
+    <sys:String x:Key="MessageMenuViewString">查看</sys:String>
+
+    <!-- 聊天详情 -->
+    <sys:String x:Key="MessageDetailTitleString">聊天详情</sys:String>
+    <sys:String x:Key="MessageDetailFindRecordString">查找聊天内容</sys:String>
+    <sys:String x:Key="MessageDetailSetTopString">设为置顶</sys:String>
+    <sys:String x:Key="MessageDetailMuteOnString">消息免打扰</sys:String>
+    <sys:String x:Key="MessageDetailClearString">清空聊天记录</sys:String>
+    <sys:String x:Key="MessageDetailClearConfirmString">确定要清空聊天记录？</sys:String>
+
+    <sys:String x:Key="MessageDetailTeamIdString">群号：</sys:String>
+
+    <!-- 发送消息的窗口 -->
+    <sys:String x:Key="MessageWindowTitledString">聊天窗口 ({0})</sys:String>
+
+    <sys:String x:Key="MessageNoticeNewContentString">有一条新消息</sys:String>
+
+    <!-- 转发消息的页面 -->
+    <sys:String x:Key="ForwardMessageRepeatString">转发窗口已打开</sys:String>
+    <sys:String x:Key="ForwardMessageSingleTitleString">发送给</sys:String>
+    <sys:String x:Key="ForwardMessageMultipleTitleString">分别发送给</sys:String>
+    <sys:String x:Key="ForwardMessageRecentGroupString">最近聊天</sys:String>
+    <sys:String x:Key="ForwardMessageFriendGroupString">好友</sys:String>
+    <sys:String x:Key="ForwardMessageTeamGroupString">群聊</sys:String>
+    <sys:String x:Key="ForwardMessageLeaveWordString">留言</sys:String>
+    <sys:String x:Key="ForwardMessageErrorString">转发失败</sys:String>
+    <sys:String x:Key="ForwardMessageSuccessString">已发送</sys:String>
+
+    <!-- 查找聊天记录的页面 -->
+    <sys:String x:Key="FindMessageTitleString">“{0}”的聊天记录</sys:String>
+    <sys:String x:Key="FindMessagePlaceholderString">输入关键字搜索聊天记录</sys:String>
+    <sys:String x:Key="FindMessageSearchKeywordString">搜索关键字</sys:String>
+    <sys:String x:Key="FindMessageSearchImageString">搜索图片</sys:String>
+    <sys:String x:Key="FindMessageSearchVideoString">搜索视频</sys:String>
+    <sys:String x:Key="FindMessageSearchFileString">搜索文件</sys:String>
+    <sys:String x:Key="FindMessageSearchStickerString">搜索表情</sys:String>
+    <sys:String x:Key="FindMessageSearchTypeString">搜索指定内容</sys:String>
+    <sys:String x:Key="FindMessageSearchTypeImageString">图片</sys:String>
+    <sys:String x:Key="FindMessageSearchTypeVideoString">视频</sys:String>
+    <sys:String x:Key="FindMessageSearchTypeFileString">文件</sys:String>
+    <sys:String x:Key="FindMessageSearchTypeStickerString">表情</sys:String>
+    <sys:String x:Key="FindMessageNotDataString">未找到符合条件的聊天记录</sys:String>
+    <sys:String x:Key="FindMessageLocationString">定位到聊天位置</sys:String>
+
+    <!-- 联系人 -->
+    <sys:String x:Key="HoemNewFriendString">新的好友</sys:String>
+    <sys:String x:Key="HoemSystemNotifyString">系统通知</sys:String>
+    <sys:String x:Key="HoemFriendString">好友</sys:String>
+    <sys:String x:Key="HoemGroupChatString">群聊</sys:String>
+    <sys:String x:Key="HomeNotFriendString">暂无好友</sys:String>
+    <sys:String x:Key="HomeGetFriendErrorString">获取好友数据失败</sys:String>
+    <sys:String x:Key="HomeNotGroupString">暂无群聊</sys:String>
+    <sys:String x:Key="HomeGetGroupErrorString">获取群聊数据失败</sys:String>
+    <sys:String x:Key="HomeGroupMemberNumberString">（{0} 人）</sys:String>
+    <sys:String x:Key="HoemFriendListFooterString">{0} 个好友</sys:String>
+    <sys:String x:Key="HoemGroupChatListFooterString">{0} 个群聊</sys:String>
+    <sys:String x:Key="HoemFriendStarredString">特别关心</sys:String>
+
+    <!-- 编辑个人资料 -->
+    <sys:String x:Key="EditProfileTitleString">编辑资料</sys:String>
+    <sys:String x:Key="EditProfileIdString">通讯号</sys:String>
+    <sys:String x:Key="EditProfileIdModifyString">修改</sys:String>
+    <sys:String x:Key="EditProfileIdModifyToolTipString">修改通讯号</sys:String>
+    <sys:String x:Key="EditProfileNicknameString">昵称</sys:String>
+    <sys:String x:Key="EditProfileNicknamePlaceholderString">请输入你的昵称，可填写 1-20 个字符</sys:String>
+    <sys:String x:Key="EditProfileSignatureString">签名</sys:String>
+    <sys:String x:Key="EditProfileSignaturePlaceholderString">填写我的签名，展现独特个性，脱颖而出</sys:String>
+    <sys:String x:Key="EditProfileSexString">性别</sys:String>
+    <sys:String x:Key="EditProfileRegionString">地区</sys:String>
+    <sys:String x:Key="EditProfileRegionSecrecyString">保密</sys:String>
+    <sys:String x:Key="EditProfileNicknameNullString">请输入你的昵称，可填写 1-20 个字符</sys:String>
+
+    <!-- 设置通讯号 -->
+    <sys:String x:Key="SetUIdTitleString">设置通讯号</sys:String>
+    <sys:String x:Key="SetUIdTipsString">通讯号由数字、字母组成，长度限 5-20 位，建议避免包含个人隐私和其它敏感的信息</sys:String>
+    <sys:String x:Key="SetUIdPlaceholderString">通讯号长度限 5-20 位</sys:String>
+    <sys:String x:Key="SetUIdErrorString">通讯号由数字、字母组成，长度限 5-20 位</sys:String>
+    <sys:String x:Key="SetUIdExistString">该通讯号已被其他人使用，请尝试更换一个通讯号</sys:String>
+    <sys:String x:Key="SetUIdNewUIdRepeatString">和正在使用的通讯号重合，无需修改</sys:String>
+
+    <!-- 设置头像 -->
+    <sys:String x:Key="SetAvatarTitleString">设置头像</sys:String>
+    <sys:String x:Key="SetAvatarTabEditString">编辑头像</sys:String>
+    <sys:String x:Key="SetAvatarTabHistoryString">历史头像</sys:String>
+    <sys:String x:Key="SetAvatarPreviewString">头像预览</sys:String>
+    <sys:String x:Key="SetAvatarSelectImageString">选择图片</sys:String>
+    <sys:String x:Key="SetAvatarSelectImageFileNotExistString">选择的图片文件不存在</sys:String>
+    <sys:String x:Key="SetAvatarSaveErrorString">保存头像失败，请重新选择图片</sys:String>
+    <sys:String x:Key="SetAvatarEditErrorString">编辑头像失败，请重新选择图片</sys:String>
+    <sys:String x:Key="SetAvatarUploadFailedString">头像上传失败</sys:String>
+    <sys:String x:Key="NotSetAvatarString">未设置头像</sys:String>
+
+    <!-- 新的好友 -->
+    <sys:String x:Key="NewFriendTitleString">新的好友</sys:String>
+    <sys:String x:Key="NewFriendNotDataString">暂无新的好友</sys:String>
+    <sys:String x:Key="NewFriendStatusAgreeString">已同意</sys:String>
+    <sys:String x:Key="NewFriendStatusRefuseString">已拒绝</sys:String>
+    <sys:String x:Key="NewFriendStatusApplyString">等待验证</sys:String>
+    <sys:String x:Key="NewFriendStatusOverdueString">已过期</sys:String>
+
+    <!-- 审核好友申请 -->
+    <sys:String x:Key="AuditFriendTitleString">好友申请</sys:String>
+    <sys:String x:Key="AuditFriendIdString">通讯号：</sys:String>
+    <sys:String x:Key="AuditFriendReasonString">附加信息</sys:String>
+    <sys:String x:Key="AuditFriendDateString">时间</sys:String>
+    <sys:String x:Key="AuditFriendSourceString">来源</sys:String>
+    <sys:String x:Key="AuditFriendIsMeApplyString">我发起的申请</sys:String>
+    <sys:String x:Key="AuditFriendRefuseString">拒绝</sys:String>
+    <sys:String x:Key="AuditFriendAgreeString">同意</sys:String>
+
+    <!-- 联系人 -->
+    <sys:String x:Key="ContactFriendSourceMeString">我</sys:String>
+    <sys:String x:Key="ContactFriendSourceHeString">对方</sys:String>
+    <sys:String x:Key="ContactFriendSourceUidString">通过搜索通讯号添加</sys:String>
+    <sys:String x:Key="ContactFriendSourcePhoneNumberString">通过搜索手机号添加</sys:String>
+    <sys:String x:Key="ContactFriendSourceGroupString">通过群聊添加</sys:String>
+    <sys:String x:Key="ContactFriendSourceScanString">通过扫一扫添加</sys:String>
+    <sys:String x:Key="ContactFriendSourceBusinessCardString">通过名片分享添加</sys:String>
+    <sys:String x:Key="ContactFriendSourceOneWayString">通过单向好友添加</sys:String>
+    <sys:String x:Key="ContactFriendCloseMeShareString">不让{0}看我的好友圈</sys:String>
+    <sys:String x:Key="ContactFriendCloseHeShareString">不看{0}的好友圈</sys:String>
+
+    <!-- 发起好友申请 -->
+    <sys:String x:Key="ApplyFriendTitleString">申请添加好友</sys:String>
+    <sys:String x:Key="ApplyFriendSubmitButtonString">发送申请</sys:String>
+    <sys:String x:Key="ApplyFriendReasonString">附加信息</sys:String>
+    <sys:String x:Key="ApplyFriendRemarkString">设置备注</sys:String>
+    <sys:String x:Key="ApplyFriendRemarkTeamNicknameString">对方的群昵称：</sys:String>
+    <sys:String x:Key="ApplyFriendPermissionsString">好友权限</sys:String>
+    <sys:String x:Key="ApplyFriendReasonPrefixString">我是</sys:String>
+    <sys:String x:Key="ApplyFriendReasonPrefixGroupString">我是“{0}”的{1}</sys:String>
+    <sys:String x:Key="ApplyFriendSendSuccessString">发送成功</sys:String>
+
+
+    <!-- 通过好友申请 -->
+    <sys:String x:Key="AgreeFriendTitleString">通过好友申请</sys:String>
+    <sys:String x:Key="AgreeFriendRemarkString">设置备注</sys:String>
+    <sys:String x:Key="AgreeFriendRemarkPlaceholderString">输入好友备注</sys:String>
+    <sys:String x:Key="AgreeFriendSuccessMessageString">添加好友成功</sys:String>
+
+
+    <!-- 用户信息 -->
+    <sys:String x:Key="UserInfoIdString">通讯号：</sys:String>
+    <sys:String x:Key="UserInfoMeIdString">我的通讯号：</sys:String>
+    <sys:String x:Key="UserInfoNicknameString">昵称：</sys:String>
+    <sys:String x:Key="UserInfoRemarkNameString">备注：</sys:String>
+    <sys:String x:Key="UserInfoTeamNicknameString">群昵称：</sys:String>
+    <sys:String x:Key="UserInfoRegionString">地区：</sys:String>
+    <sys:String x:Key="UserInfoSignatureString">签名：</sys:String>
+    <sys:String x:Key="UserInfoDataString">好友资料</sys:String>
+    <sys:String x:Key="UserInfoAddDataString">添加好友的备注名、电话、备忘等</sys:String>
+    <sys:String x:Key="UserInfoRemarkString">备注</sys:String>
+    <sys:String x:Key="UserInfoPhoneString">电话</sys:String>
+    <sys:String x:Key="UserInfoMemoString">备忘</sys:String>
+    <sys:String x:Key="UserInfoPermissionsString">好友权限</sys:String>
+    <sys:String x:Key="UserInfoShareString">好友圈</sys:String>
+    <sys:String x:Key="UserInfoSendMessageString">发消息</sys:String>
+    <sys:String x:Key="UserInfoAudioCallString">语音通话</sys:String>
+    <sys:String x:Key="UserInfoVideoCallString">音视通话</sys:String>
+    <sys:String x:Key="UserInfoEditProfileString">编辑资料</sys:String>
+    <sys:String x:Key="UserInfoAddFriendString">添加好友</sys:String>
+    <sys:String x:Key="UserInfoNotDataString">该用户不存在</sys:String>
+    <sys:String x:Key="UserInfoGetErrorDataString">获取用户数据失败</sys:String>
+    <sys:String x:Key="UserInfoMoreSetFriendDataString">设置好友资料</sys:String>
+    <sys:String x:Key="UserInfoMoreSetFriendPowerString">设置好友权限</sys:String>
+    <sys:String x:Key="UserInfoMoreSetRecommendString">推荐该联系人</sys:String>
+    <sys:String x:Key="UserInfoMoreSetStarredString">设为特别关心</sys:String>
+    <sys:String x:Key="UserInfoMoreCancelStarredString">取消特别关心</sys:String>
+    <sys:String x:Key="UserInfoMoreAddBlackString">加入黑名单</sys:String>
+    <sys:String x:Key="UserInfoMoreRemoveBlackString">移除黑名单</sys:String>
+    <sys:String x:Key="UserInfoBlackListString">已添加至黑名单，你将不再收到对方的消息</sys:String>
+    <sys:String x:Key="UserInfoAddBlackInquiryString">加入黑名单，你将不再收到对方的消息，并且你们互相看不到对方好友圈的更新</sys:String>
+    <sys:String x:Key="UserInfoMoreDeleteString">删除联系人</sys:String>
+    <sys:String x:Key="UserInfoMoreDeleteInquiryString">删除联系人，同时删除与该联系人的聊天记录</sys:String>
+    <sys:String x:Key="UserInfoMoreDeleteSuccessString">联系人删除成功</sys:String>
+    <sys:String x:Key="UserInfoWriteOffString">该用户已注销</sys:String>
+
+    <sys:String x:Key="UserInfoWindowTitle">用户信息</sys:String>
+
+    <!-- 选择用户（好友）的窗口-->
+    <sys:String x:Key="UserPickerSearchPlaceholderString">搜索联系人，支持拼音字母搜索</sys:String>
+    <sys:String x:Key="UserPickerNotExistString">未找到合适的联系人</sys:String>
+    <sys:String x:Key="UserPickerGetErrorDataString">获取联系人数据失败</sys:String>
+    <sys:String x:Key="UserPickerFooterTextString">{0} 个联系人</sys:String>
+    <sys:String x:Key="UserPickerCheckedCountString">已选择 {0} 个联系人</sys:String>
+    <sys:String x:Key="UserPickerFooterTextForSearchString">搜索出 {0} 个联系人</sys:String>
+    <sys:String x:Key="UserPickerNotSelectableString">没有联系人可以选择了 `(*^﹏^*)′</sys:String>
+    <sys:String x:Key="UserPickerNotSelectableCountString">有 {0} 个联系人不可选</sys:String>
+
+
+    <!-- 设置好友资料（设置备注、电话、备忘等信息）-->
+    <sys:String x:Key="SetFriendDataTitleString">设置好友资料</sys:String>
+    <sys:String x:Key="SetFriendDataRemarkString">备注</sys:String>
+    <sys:String x:Key="SetFriendDataMemoString">备忘</sys:String>
+    <sys:String x:Key="SetFriendDataTelString">电话</sys:String>
+    <sys:String x:Key="SetFriendDataAddTelString">添加电话</sys:String>
+    <sys:String x:Key="SetFriendDataInputTelString">填写电话</sys:String>
+    <sys:String x:Key="SetFriendDataMemoPlaceholderString">添加更多文本信息</sys:String>
+
+    <!-- 设置好友权限 -->
+    <sys:String x:Key="SetFriendPoweTitleString">设置好友权限</sys:String>
+    <sys:String x:Key="SetFriendPoweShareString">好友圈和状态</sys:String>
+
+    <!-- 添加好友（搜索用户的窗口）-->
+    <sys:String x:Key="SearchFriendTitleString">添加好友</sys:String>
+    <sys:String x:Key="SearchFriendPlaceholderAString">输入通讯号或邮箱</sys:String>
+    <sys:String x:Key="SearchFriendPlaceholderBString">输入通讯号或手机号</sys:String>
+    <sys:String x:Key="SearchFriendDataNullString">搜索的用户不存在</sys:String>
+    <sys:String x:Key="SearchFriendGetErrorDataString">获取用户数据失败</sys:String>
+    <sys:String x:Key="SearchFriendNotAddSelfString">无法添加自己为好友</sys:String>
+
+
+    <!-- ======================== Group  ======================== -->
+
+    <!-- public -->
+    <sys:String x:Key="TeamAddNewMemberString">添加新成员</sys:String>
+    <sys:String x:Key="TeamMemberBeOutString">你已不在该群聊中</sys:String>
+    <sys:String x:Key="TeamMemberAllNoSpeakString">全员禁言中</sys:String>
+    <sys:String x:Key="TeamMemberNoSpeakString">你已被禁言</sys:String>
+    <sys:String x:Key="TeamMemberNotPermissionString">你无权操作</sys:String>
+    <sys:String x:Key="TeamInviteMemberSuccessString">邀请成功</sys:String>
+    <sys:String x:Key="TeamInviteMemberWaitAuditString">已邀请，等待群主或管理员同意后，被邀请的人才会进入群聊</sys:String>
+    <sys:String x:Key="TeamQuitConfirmString">即将退出群聊“{0}”</sys:String>
+    <sys:String x:Key="TeamDismissConfirmString">解散群后你和群友都将被移除群聊，确定要解散吗？</sys:String>
+
+    <!-- 创建群聊 -->
+    <sys:String x:Key="CreateTeamTitleString">创建群聊</sys:String>
+    <sys:String x:Key="CreateTeamNameString">群聊名称</sys:String>
+    <sys:String x:Key="CreateTeamAvatarString">群聊头像</sys:String>
+    <sys:String x:Key="CreateTeamNameTemplateString">{0}的群聊</sys:String>
+    <sys:String x:Key="CreateTeamMemberNumberString">群聊成员 ({0})</sys:String>
+    <sys:String x:Key="CreateTeamConfirmString">立即创建</sys:String>
+
+
+    <!-- 群聊相关字符串 -->
+    <sys:String x:Key="TeamNotExistString">群聊不存在或已被解散</sys:String>
+    <sys:String x:Key="TeamGetErrorDataString">获取群聊数据失败</sys:String>
+    <sys:String x:Key="TeamRoleMasterString">群主</sys:String>
+    <sys:String x:Key="TeamRoleAdminString">管理员</sys:String>
+    <sys:String x:Key="TeamRoleNormalString">普通成员</sys:String>
+
+    <!-- 加入群聊（搜索群聊的窗口）-->
+    <sys:String x:Key="SearchTeamTitleString">加入群聊</sys:String>
+    <sys:String x:Key="SearchTeamPlaceholderString">输入群号或群名称关键词，搜一搜群聊</sys:String>
+    <sys:String x:Key="SearchTeamDataNullString">搜索的群聊不存在</sys:String>
+    <sys:String x:Key="SearchTeamGetErrorDataString">获取群聊数据失败</sys:String>
+    <sys:String x:Key="SearchTeamIdString">群号：</sys:String>
+
+    <!-- 群聊信息页面 -->
+    <sys:String x:Key="TeamInfoGIdString">群号：</sys:String>
+    <sys:String x:Key="TeamInfoSecrecyToolTip">私密群</sys:String>
+    <sys:String x:Key="TeamInfoNameString">群名称：</sys:String>
+    <sys:String x:Key="TeamInfoDescriptionString">群简介：</sys:String>
+    <sys:String x:Key="TeamInfoRemarkNameString">群备注</sys:String>
+    <sys:String x:Key="TeamInfoRemarkNamePlaceholderString">设置群备注</sys:String>
+    <sys:String x:Key="TeamInfoRemarkNameEditToolTipString">编辑群备注</sys:String>
+    <sys:String x:Key="TeamInfoMeNicknameString">群昵称</sys:String>
+    <sys:String x:Key="TeamInfoMeNicknamePlaceholderString">设置我在本群的昵称，群内成员都可见</sys:String>
+    <sys:String x:Key="TeamInfoMeNicknameEditToolTipString">编辑我在本群的昵称</sys:String>
+    <sys:String x:Key="TeamInfoNewNoticeString">群公告</sys:String>
+    <sys:String x:Key="TeamInfoNewNoticeSeeMoreString">查看更多</sys:String>
+    <sys:String x:Key="TeamInfoNotNewNoticeString">暂无公告</sys:String>
+    <sys:String x:Key="TeamInfoTimeToolTipString">本群创建于 {0}</sys:String>
+    <sys:String x:Key="TeamInfoSeeMemberNumberString">查看 {0} 名群成员</sys:String>
+    <sys:String x:Key="TeamInfoMemberString">群成员</sys:String>
+    <sys:String x:Key="TeamInfoAdminString">群管理员</sys:String>
+    <sys:String x:Key="TeamInfoSendMessageString">发送消息</sys:String>
+    <sys:String x:Key="TeamInfoShareString">分享群聊</sys:String>
+    <sys:String x:Key="TeamInfoJoinString">申请入群</sys:String>
+    <sys:String x:Key="TeamInfoSetNameErrorString">设置群名称失败，请稍后重试</sys:String>
+    <sys:String x:Key="TeamInfoSetRemarkNameErrorString">设置群备注失败，请稍后重试</sys:String>
+    <sys:String x:Key="TeamInfoSetMeNicknameErrorString">设置群昵称失败，请稍后重试</sys:String>
+    <sys:String x:Key="TeamInfoSetDescriptionErrorString">设置群简介失败，请稍后重试</sys:String>
+    <sys:String x:Key="TeamInfoJoinSuccessString">加入成功</sys:String>
+    <sys:String x:Key="TeamInfoJoinUnknownErrorString">已提交申请，但返回未知状态</sys:String>
+    <sys:String x:Key="TeamInfoJoinWaitAdminAuditString">已提交申请，等待群主或管理审核之后才可以入群</sys:String>
+    <!--群聊信息页面 - 弹出菜单  -->
+    <sys:String x:Key="TeamInfoEntryString">进入群聊</sys:String>
+    <sys:String x:Key="TeamInfoLeaveString">退出群聊</sys:String>
+    <sys:String x:Key="TeamInfoInviteString">邀请新成员</sys:String>
+    <sys:String x:Key="TeamInfoDisbandString">解散群聊</sys:String>
+    <sys:String x:Key="TeamInfoSetDataString">设置群聊资料</sys:String>
+    <sys:String x:Key="TeamInfoManagementString">设置群聊权限</sys:String>
+
+    <!-- 群聊成员列表 -->
+    <sys:String x:Key="TeamMemberListTitleString">群聊成员</sys:String>
+    <sys:String x:Key="TeamMemberListFooterTextString">{0} 名成员</sys:String>
+    <sys:String x:Key="TeamMemberListFooterTextForSearchString">搜索出 {0} 名成员</sys:String>
+    <sys:String x:Key="TeamMemberListNotExistString">未找到合适的群聊成员</sys:String>
+    <sys:String x:Key="TeamMemberListGetErrorDataString">获取群聊成员数据失败</sys:String>
+    <sys:String x:Key="TeamMemberSearchPlaceholderString">搜索群聊成员，支持拼音字母搜索</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemSendMessageString">发消息</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemTAString">TA</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemViewInfoString">查看资料</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemSetAdminString">设为管理员</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemCancelAdminString">取消管理员</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemSetNicknameString">修改群昵称</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemSetNoSpeakString">设为禁言</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemCancelNoSpeakString">解除禁言</sys:String>
+    <sys:String x:Key="TeamMemberListMenuItemRemoveString">移出群聊</sys:String>
+    <sys:String x:Key="TeamMemberListRemoveConfirmString">确定要将 {0} 从群聊中移出吗？</sys:String>
+    <sys:String x:Key="TeamMemberListRemoveMultipleConfirmString">确定要将选中的成员从群聊中移出吗？</sys:String>
+
+    <sys:String x:Key="TeamMemberListAddString">邀请</sys:String>
+    <sys:String x:Key="TeamMemberListRemoveString">移出</sys:String>
+
+    <!-- 修改成员昵称的页面 -->
+    <sys:String x:Key="SetMemberNicknameTitleString">修改群昵称</sys:String>
+    <sys:String x:Key="SetMemberNicknamePlaceholderString">设置在本群的昵称，只有群内成员可见</sys:String>
+
+    <!-- 设置群聊资料 -->
+    <sys:String x:Key="TeamSetDataTitleString">设置群聊资料</sys:String>
+    <sys:String x:Key="TeamSetDataNameString">群名称</sys:String>
+    <sys:String x:Key="TeamSetDataNameTipsString">修改群名称后，将在群内通知其他成员</sys:String>
+    <sys:String x:Key="TeamSetDataNamePlaceholderString">输入群名称，1-20 个字符</sys:String>
+    <sys:String x:Key="TeamSetDataDescriptionString">群简介</sys:String>
+    <sys:String x:Key="TeamSetDataDescriptionPlaceholdString">输入群简介，1-50 个字符</sys:String>
+
+    <!-- 设置群聊权限 -->
+    <sys:String x:Key="TeamSetPowerTitleString">设置群聊权限</sys:String>
+    <sys:String x:Key="TeamSetPowerAdminString">管理权限</sys:String>
+    <sys:String x:Key="TeamSetPowerAddAdminString">添加管理员</sys:String>
+    <sys:String x:Key="TeamSetPowerCancelAdminString">取消管理员身份</sys:String>
+    <sys:String x:Key="TeamSetPowerAddAdminMaxCountString">管理员人数已达到最大上限，最多 {0} 名管理员</sys:String>
+    <sys:String x:Key="TeamSetPowerSetAdminConfirmString">确定要设置 {0} 为管理员吗？</sys:String>
+    <sys:String x:Key="TeamSetPowerCancelAdminConfirmString">确定要取消 {0} 的管理员身份？</sys:String>
+    <sys:String x:Key="TeamSetPowerNoSpeakString">发言权限</sys:String>
+    <sys:String x:Key="TeamSetPowerAddNoSpeakString">添加禁言成员</sys:String>
+    <sys:String x:Key="TeamSetPowerRemoveMemberString">移出成员</sys:String>
+    <sys:String x:Key="TeamSetPowerCancelNoSpeakString">解除禁言</sys:String>
+    <sys:String x:Key="TeamSetPowerCancelNoSpeaktSuccessString">解除禁言成功</sys:String>
+    <sys:String x:Key="TeamSetPowerAllMemberNoSpeakString">全员禁言</sys:String>
+    <sys:String x:Key="TeamSetPowerAllMemberNoSpeakTispString">只允许群主和管理员发言</sys:String>
+    <sys:String x:Key="TeamSetPowerOpenString">开放权限</sys:String>
+    <sys:String x:Key="TeamSetPowerJoinApplyString">加群审批列表</sys:String>
+    <sys:String x:Key="TeamSetPowerJoinWayString">加群方式</sys:String>
+    <sys:String x:Key="TeamSetPowerJoinWayNormalString">允许任何人加入群</sys:String>
+    <sys:String x:Key="TeamSetPowerJoinWayConfirmString">需要群主或管理员审核</sys:String>
+    <sys:String x:Key="TeamSetPowerNotInviteString">允许群成员邀请加群</sys:String>
+    <sys:String x:Key="TeamSetPowerSearchWayString">搜索方式</sys:String>
+    <sys:String x:Key="TeamSetPowerSearchWayDisableString">不允许被搜索</sys:String>
+    <sys:String x:Key="TeamSetPowerSearchWayIdString">仅通过群号搜索</sys:String>
+    <sys:String x:Key="TeamSetPowerSearchWayIdOrOtherString">通过群号或关键字搜索</sys:String>
+    <sys:String x:Key="TeamSetPowerJoinWayDisableString">不允许任何人加入群</sys:String>
+    <sys:String x:Key="TeamSetPowerTransferString">转让群聊</sys:String>
+    <sys:String x:Key="TeamSetPowerTransferSuccessString">转让群聊成功</sys:String>
+    <sys:String x:Key="TeamSetPowerTransferConfirmString">确定要将群主身份转让给 {0} ？</sys:String>
+    <!-- 更新数据失败错误提示 -->
+    <sys:String x:Key="TeamSetPowerSetAuthTypeErrorString">设置加群方式失败，请稍后重试</sys:String>
+    <sys:String x:Key="TeamSetPowerSetSearchTypeErrorString">设置搜索方式失败，请稍后重试</sys:String>
+    <sys:String x:Key="TeamSetPowerSetNoAllSpeakErrorString">设置全员禁言失败，请稍后重试</sys:String>
+    <sys:String x:Key="TeamSetPowerSetAllowInviteErrorString">设置允许群成员邀请加群失败，请稍后重试</sys:String>
+
+    <!-- 群公告 -->
+    <sys:String x:Key="TeamNoticeNotExistString">公告不存在或已被删除</sys:String>
+    <sys:String x:Key="TeamNoticeListTitleString">“{0}”的群公告</sys:String>
+    <sys:String x:Key="TeamNoticeListNotExistString">暂无群公告</sys:String>
+    <sys:String x:Key="TeamNoticeListGetErrorDataString">获取群公告数据失败</sys:String>
+    <sys:String x:Key="TeamNoticeDetailGetErrorDataString">获取群公告详情数据失败</sys:String>
+    <sys:String x:Key="TeamNoticePublishString">发布公告</sys:String>
+    <sys:String x:Key="TeamNoticeClearConfirmString">确定删除该条群公告？</sys:String>
+
+    <sys:String x:Key="TeamNoticeAddTitleString">发布“{0}”的群公告</sys:String>
+    <sys:String x:Key="TeamNoticeAddPublishString">发布</sys:String>
+    <sys:String x:Key="TeamNoticeAddRtbPlaceholderString">填写公告，1-500 字</sys:String>
+    <sys:String x:Key="TeamNoticeAddContentNullString">公告内容不能为空</sys:String>
+    <sys:String x:Key="TeamNoticeAddContentLimitString">公告内容不能超过 500 字</sys:String>
+
+    <!-- 加群审批列表 -->
+    <sys:String x:Key="MemberWaitAuditTitleString">加群审批列表</sys:String>
+    <sys:String x:Key="MemberWaitAuditNotDataString">暂无加群申请</sys:String>
+    <sys:String x:Key="MemberWaitAuditWayInviteString">{0}邀请入群</sys:String>
+    <sys:String x:Key="MemberWaitAuditWayCardString">通过群名片入群</sys:String>
+    <sys:String x:Key="MemberWaitAuditWayQrcodeString">通过群二维码入群</sys:String>
+    <sys:String x:Key="MemberWaitAuditWaySearchGIdString">通过搜索群信息入群</sys:String>
+
+
+    <!-- 选择群聊成员 -->
+    <sys:String x:Key="MemberPickerTitleString">选择群聊成员</sys:String>
+    <sys:String x:Key="MemberPickerCheckedCountString">已选择 {0} 名成员</sys:String>
+
+
+    <!-- 收藏 -->
+    <sys:String x:Key="CollectTitleString">收藏</sys:String>
+    <sys:String x:Key="CollectTabAllString">全部收藏</sys:String>
+    <sys:String x:Key="CollectTabTextString">文本</sys:String>
+    <sys:String x:Key="CollectTabImageString">图片</sys:String>
+    <sys:String x:Key="CollectTabVideoString">视频</sys:String>
+    <sys:String x:Key="CollectTabAudioString">语音</sys:String>
+    <sys:String x:Key="CollectTabFileString">文件</sys:String>
+    <sys:String x:Key="CollectTabMessageString">聊天记录</sys:String>
+    <sys:String x:Key="CollectNotDataString">暂无收藏内容</sys:String>
+    <sys:String x:Key="CollectSourceFromGroupString">{0}（来自群聊）</sys:String>
+    <sys:String x:Key="CollectSourceFromMomentString">{0}（来自好友圈）</sys:String>
+    <sys:String x:Key="CollectTypeContentAudioString">[语音]</sys:String>
+    <sys:String x:Key="CollectTypeContentErrorString">[该收藏类型暂不能显示]</sys:String>
+    <sys:String x:Key="CollectClearConfirmString">确定要删除该收藏？</sys:String>
+
+    <!-- 收藏详情 -->
+    <sys:String x:Key="CollectDetailTitleString">收藏详情</sys:String>
+
+    <!-- 收藏内容转发 -->
+    <sys:String x:Key="CollectForwardSendString">发送</sys:String>
+    <sys:String x:Key="CollectForwardSendToObjectString">发送收藏给 {0}</sys:String>
+    <sys:String x:Key="CollectForwardSendErrorString">{0} 条发送成功，{1} 条发送失败</sys:String>
+
+    <!-- 我的表情 -->
+    <sys:String x:Key="StickerTitleString">我的表情</sys:String>
+    <sys:String x:Key="StickerNotDataString">暂无表情</sys:String>
+    <sys:String x:Key="StickerClearConfirmString">确定要删除该表情？</sys:String>
+    <sys:String x:Key="StickerClearMultipleConfirmString">确定要删除已选中的 {0} 个表情？</sys:String>
+    <sys:String x:Key="StickerSetTopString">移至最前</sys:String>
+    <sys:String x:Key="StickerAddFailedNumberString">{0} 张添加失败</sys:String>
+    <sys:String x:Key="StickerUploadProgressString">上传中 ({0}/{1})</sys:String>
+    <sys:String x:Key="StickerMaxUploadFileSizeString">单个表情图片文件不能超过 {0}</sys:String>
+    <sys:String x:Key="StickerMaxUploadFileCountString">同时上传表情图片文件不能超过 {0} 张</sys:String>
+
+    <!-- 好友圈 -->
+    <sys:String x:Key="MomentTitleString">好友圈</sys:String>
+    <sys:String x:Key="MomentSetCoverString">设置封面</sys:String>
+    <sys:String x:Key="MomentResetCoverString">恢复默认封面</sys:String>
+    <sys:String x:Key="MomentLinkString">赞</sys:String>
+    <sys:String x:Key="MomentCommentString">评论</sys:String>
+    <sys:String x:Key="MomentCommentReplyString">回复</sys:String>
+    <sys:String x:Key="MomentCommentReplyUserString">回复 {0}</sys:String>
+    <sys:String x:Key="MomentCommentEndMarkerString">：</sys:String>
+    <sys:String x:Key="MomentLinkSeparatorString">、</sys:String>
+    <sys:String x:Key="MomentLinkErrorString">点赞失败，请稍后重试</sys:String>
+    <sys:String x:Key="MomentLinkCancelErrorString">取消点赞失败，请稍后重试</sys:String>
+    <sys:String x:Key="MomentArticlePrivateString">仅自己可见</sys:String>
+    <sys:String x:Key="MomentArticleDeleteConfirmString">确定要删除这条好友圈？</sys:String>
+    <sys:String x:Key="MomentArticleTextContentLimitString">文本内容不能超过 {0} 个字符</sys:String>
+
+    <sys:String x:Key="MomentCommentTextEmptyString">评论内容不能为空</sys:String>
+    <sys:String x:Key="MomentCommentTextLimitString">评论内容不能超过 100 个字符</sys:String>
+    <sys:String x:Key="MomentCommentDeleteConfirmString">确定要删除这条评论？</sys:String>
+
+    <sys:String x:Key="MomentAddPlaceholderString">这一刻的想法...</sys:String>
+    <sys:String x:Key="MomentAddImageString">图片</sys:String>
+    <sys:String x:Key="MomentAddImageOrVideoString">图片或视频</sys:String>
+    <sys:String x:Key="MomentAddVisibleTypeString">谁可以看</sys:String>
+    <sys:String x:Key="MomentAddVisibleTypePublicString">公开</sys:String>
+    <sys:String x:Key="MomentAddVisibleTypePrivateString">私密</sys:String>
+    <sys:String x:Key="MomentAddImageVideoCoexistString">不能同时选中视频和图片</sys:String>
+    <sys:String x:Key="MomentAddImageLimitString">最多选择 9 张图片，已过滤 {0} 张图片 `(*^﹏^*)′</sys:String>
+    <sys:String x:Key="MomentAddImageErrorString">包含 {0} 张无效图片，已自动过滤 `(*^﹏^*)′</sys:String>
+    <sys:String x:Key="MomentAddVideoLimitString">最多选择 1 个视频，已过滤 {0} 个视频 `(*^﹏^*)′</sys:String>
+    <sys:String x:Key="MomentAddImageMoveForwardString">向前移动</sys:String>
+    <sys:String x:Key="MomentAddImageMoveBackwardString">向后移动</sys:String>
+
+    <sys:String x:Key="MomentSetCoverTitleString">设置好友圈封面</sys:String>
+    <sys:String x:Key="MomentResetCoverConfirmString">确定要恢复默认封面？</sys:String>
+
+    <sys:String x:Key="MomentArticleDetailString">详情</sys:String>
+
+    <!-- -->
+    <sys:String x:Key="SetLockTitleString">设置锁屏密码</sys:String>
+    <sys:String x:Key="SetLockInputPasswordString">首次使用锁屏功能，请设置 6 位数字密码</sys:String>
+    <sys:String x:Key="SetLockConfirmPasswordString">再次验证密码的一致性</sys:String>
+    <sys:String x:Key="SetLockPasswordErrorString">两次输入的密码不一致</sys:String>
+    <sys:String x:Key="UnlockTipsString">输入密码解锁</sys:String>
+    <sys:String x:Key="UnlockPasswordErrorString">密码错误</sys:String>
+
+    <sys:String x:Key="SettingTitleString">设置</sys:String>
+    <sys:String x:Key="SettingAccountString">账号</sys:String>
+    <sys:String x:Key="SettingUniversalString">通用</sys:String>
+    <sys:String x:Key="SettingNoticeString">通知</sys:String>
+    <sys:String x:Key="SettingStorageString">存储</sys:String>
+    <sys:String x:Key="SettingAboutString">关于</sys:String>
+
+    <sys:String x:Key="SettingAccountLogOutString">退出登录</sys:String>
+    <sys:String x:Key="SettingAccountLogOutConfirmString">退出后即将清空登录信息，确定退出登录？</sys:String>
+    <sys:String x:Key="SettingAccountUIdString">通讯号</sys:String>
+    <sys:String x:Key="SettingAccountEmailString">邮箱</sys:String>
+    <sys:String x:Key="SettingAccountPhoneNumberString">手机号</sys:String>
+    <sys:String x:Key="SettingAccountSafetyString">安全</sys:String>
+    <sys:String x:Key="SettingAccountAddFriendWayString">可以通过以下方式找到我</sys:String>
+    <sys:String x:Key="SettingAccountModifypasswordString">修改密码</sys:String>
+    <sys:String x:Key="SettingAccountClearAllMsgConfirmString">确定要清空全部聊天记录？</sys:String>
+
+    <sys:String x:Key="ModifyEmailTitleString">更换邮箱</sys:String>
+    <sys:String x:Key="ModifyEmailBindTitleString">绑定邮箱</sys:String>
+    <sys:String x:Key="ModifyEmailTipsString">设置邮箱保护账号安全，一个邮箱只能绑定一个账号</sys:String>
+    <sys:String x:Key="ModifyEmailPlaceholderString">输入邮箱地址</sys:String>
+    <sys:String x:Key="ModifyEmailNullString">邮箱地址不能为空</sys:String>
+    <sys:String x:Key="ModifyEmailErrorString">邮箱地址格式不正确</sys:String>
+    <sys:String x:Key="ModifyEmailRepeatString">输入的新邮箱地址和旧邮箱地址相同</sys:String>
+
+    <sys:String x:Key="ModifyPhoneTitleString">更换手机号</sys:String>
+    <sys:String x:Key="ModifyPhoneTipsString">设置手机号保护账号安全，一个手机号只能绑定一个账号</sys:String>
+    <sys:String x:Key="ModifyPhonePlaceholderString">输入手机号</sys:String>
+    <sys:String x:Key="ModifyPhoneNullString">手机号码不能为空</sys:String>
+    <sys:String x:Key="ModifyPhoneErrorString">手机号码格式不正确</sys:String>
+    <sys:String x:Key="ModifyPhoneRepeatString">输入的新手机号码和旧手机号码相同</sys:String>
+
+    <sys:String x:Key="ModifyPasswordTitleString">修改密码</sys:String>
+    <sys:String x:Key="ModifyPasswordOldString">输入旧密码</sys:String>
+    <sys:String x:Key="ModifyPasswordNewString">新密码长度为 6-20 个字符</sys:String>
+    <sys:String x:Key="ModifyPasswordNewConfirmString">再次确认新密码</sys:String>
+    <sys:String x:Key="ModifyPasswordOldNullString">请输入旧的密码</sys:String>
+    <sys:String x:Key="ModifyPasswordNewNullString">请输入新密码，可填写 6-20 个字符</sys:String>
+    <sys:String x:Key="ModifyPasswordNewOverflowString">新密码长度为 6-20 个字符</sys:String>
+    <sys:String x:Key="ModifyPasswordNewConfirmNullString">请输入确认新密码</sys:String>
+    <sys:String x:Key="ModifyPasswordNewConfirmErrorString">两次输入的新密码不一致</sys:String>
+
+    <sys:String x:Key="SettingAppearanceString">外观</sys:String>
+    <sys:String x:Key="SettingAppearanceLString">浅色</sys:String>
+    <sys:String x:Key="SettingAppearanceDString">深色</sys:String>
+    <sys:String x:Key="SettingSendMsgShortcutKeyString">发送消息快捷键</sys:String>
+    <sys:String x:Key="SettingSendMsgShortcutKeyEString">Enter</sys:String>
+    <sys:String x:Key="SettingSendMsgShortcutKeyCEString">Ctrl+Enter</sys:String>
+    <sys:String x:Key="SettingRecoverWindowSizeString">恢复窗口默认大小</sys:String>
+
+    <sys:String x:Key="SettingNoticeEnableString">新消息通知</sys:String>
+    <sys:String x:Key="SettingNoticeShowSummaryString">显示消息通知摘要</sys:String>
+
+    <sys:String x:Key="SettingStoragePathString">存储位置</sys:String>
+    <sys:String x:Key="SettingStoragePathEqualString">与当前存储位置相同</sys:String>
+    <sys:String x:Key="SettingStoragePathConfirmString">更换存储位置需要重启应用，确定更换？</sys:String>
+
+    <sys:String x:Key="SettingAboutVersionString">版本信息</sys:String>
+
+    <sys:String x:Key="ForceOfflineTitleString">强制下线通知</sys:String>
+
+    <sys:String x:Key="ForceOfflineTipsAString">你的帐号于 {0} 在设备 {1} 上登录。如果这不是你本人操作，你的登录密码已经泄露，请尽快修改。</sys:String>
+    <sys:String x:Key="ForceOfflineTipsBString">你的帐号于 {0} 在设备 {1} 上登录，设备号：{2}。如果这不是你本人操作，你的登录密码已经泄露，请尽快修改。</sys:String>
+    <sys:String x:Key="ForceOfflineTipsCString">当前登录会话已过期或验证失败，需要重新进行身份验证‌。</sys:String>
+
+</ResourceDictionary>

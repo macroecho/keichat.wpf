@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<Product>KeiChatDemo</Product>
+		<AssemblyName>KeiChatDemo</AssemblyName>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<ApplicationIcon>icon_128.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="icon_128.ico" />
+	  <None Remove="Resources\launcher_license_demo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="icon_128.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Assets\crt\im.crt" />
+		<Resource Include="Assets\crt\root.crt" />
+		<Resource Include="Assets\region.json" />
+		<Resource Include="Assets\emojis.zip" />
+		<Resource Include="Resources\launcher_license_demo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="KeiChat.PhotoUI" Version="6.0.3" />
+		<PackageReference Include="KeiChat.WinUI" Version="6.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="config.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="config.photo.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="libvlc\win-x32\Placeholder.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="libvlc\win-x64\Placeholder.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
