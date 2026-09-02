@@ -14,7 +14,7 @@
   <img src="Images/logo.png" width="100" alt="NeoChat Logo">
 </p>
 
-
+**简体中文** | [English](README_en.md)
 
 ---
 
